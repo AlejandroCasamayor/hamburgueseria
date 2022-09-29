@@ -99,7 +99,7 @@ header nav .container .menu li :is(a:hover, .activo) {
 /* fin header */
 
 /* inicio footer*/
-/* fin footer */
+
 footer {
   background-color: var(--colorsecundario);
   padding: 1.25em 0em;
@@ -125,6 +125,72 @@ footer a:hover {
   right: 0.25em;
   font-size: 300%;
 }
+/* fin footer */
+
+/* inicio hero */
+
+.hero {
+  background-image: url(../images/fondo.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-position: center center;
+  background-color: #777;
+  background-blend-mode: multiply;
+  color: white;
+  display: flex;
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.hero h1 {
+  font-family: var(--fuentetitulos);
+  font-size: 2em;
+}
+
+.hero h2 {
+  color: var(--colorprincipal);
+  font-size: 1.25em;
+  margin: var(--margingrid) 0;
+}
+.hero p {
+  font-size: 1.15em;
+}
+.boton {
+  display: inline-block;
+  background-color: var(--colorprincipal);
+  color: white;
+  text-decoration: none;
+  padding: 1.15em;
+  margin: var(--margingrid) 0;
+  border: 1px solid var(--colorprincipal);
+}
+.boton:hover {
+  background-color: transparent;
+  color: var(--colorprincipal);
+}
+.boton i {
+  transition: 1s;
+}
+.boton:hover i {
+  transform: translateX(5px) scale(1.3);
+  transition: 1s;
+}
+.hero ul {
+  display: flex;
+  width: 9em;
+  justify-content: space-between;
+}
+.hero ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+/* fin hero */
+
 /* media queries */
 
 @media (min-width: 37.5em) {
