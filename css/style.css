@@ -219,11 +219,101 @@ main section .underline span {
 main section .underline hr {
   border-color: var(--colorprincipal);
 }
+main section .grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section .grid article {
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  padding: 1.5em 0;
+}
+main section .grid article > div .fa-solid {
+  border: 2px solid var(--colorprincipal);
+  color: var(--colorprincipal);
+  font-size: 120%;
+  padding: 0.75em;
+}
+main section article h3 {
+  font-weight: 700;
+  font-size: 110%;
+  margin: 0.625em 0;
+}
+main p {
+  color: #666;
+  line-height: 1.25;
+  font-size: 95%;
+}
+main section article p {
+  margin-bottom: 0.5em;
+}
+.enlace {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--colorprincipal);
+}
+.fa-truck {
+  transform: rotateY(180deg);
+}
 /* Final Our Services */
+
+/* Inicio About Us */
+
+main #aboutus {
+  margin-bottom: 4.375em;
+}
+
+main section .flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5em;
+}
+main section .flex h3 {
+  font-weight: 700;
+  font-size: 110%;
+}
+main section .flex h4 {
+  color: var(--colorprincipal);
+  margin: var(--margingrid) 0;
+}
+
+main section .flex .imagen {
+  margin: 2.5em auto;
+}
+main section .flex .imagen .marco {
+  border: 3px solid var(--colorprincipal);
+  transform: rotateZ(10deg);
+  transition: 1s;
+}
+main section .flex .imagen .marco img {
+  transform: rotateZ(-10deg);
+  transition: 1s;
+}
+
+main section .flex .imagen:hover :is(.marco, .marco img) {
+  transform: rotateZ(0deg);
+}
+/* Final About Us */
 /* media queries */
 
 @media (min-width: 37.5em) {
   /*600px tablet*/
+  main section .grid article {
+    width: 50%;
+    border-bottom: none;
+    border-left: 1px solid #aaa;
+    padding: 1.5em;
+    margin-top: 1em;
+  }
+  main section .grid article:last-child {
+    width: 100%;
+  }
+  main section .flex {
+    flex-direction: row;
+  }
+  main section .flex .imagen {
+    margin: 0 2.5em;
+  }
 }
 @media (min-width: 48em) {
   /*768px tablet grande pantall peq*/
@@ -232,6 +322,9 @@ main section .underline hr {
   }
   footer {
     text-align: left;
+  }
+  main section .grid :is(article, article:last-child) {
+    width: 33.333%;
   }
 }
 @media (min-width: 62.75em) {
