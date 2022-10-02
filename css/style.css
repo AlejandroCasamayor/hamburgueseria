@@ -294,6 +294,32 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
   transform: rotateZ(0deg);
 }
 /* Final About Us */
+
+/* Inicio Our Blog */
+main section.ourblog .grid article {
+  border-left: none;
+}
+main section.ourblog .grid article h3 {
+  font-weight: 700;
+}
+.ourblog blockquote {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--colorprincipal);
+  margin-bottom: 0.625em;
+  font-size: 90%;
+}
+.ourblog .fecha {
+  background-color: var(--colorprincipal);
+  opacity: 90%;
+  padding: 0.625em;
+  position: absolute;
+  text-align: center;
+  font-weight: 700;
+  font-size: 110%;
+  color: white;
+}
+/* Fin Our Blog*/
 /* media queries */
 
 @media (min-width: 37.5em) {
