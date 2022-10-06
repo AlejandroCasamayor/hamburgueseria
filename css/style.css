@@ -320,6 +320,62 @@ main section.ourblog .grid article h3 {
   color: white;
 }
 /* Fin Our Blog*/
+/* Inicio Menu*/
+body {
+  background-color: var(--colorsecundario);
+}
+main #menu #menulateral {
+  display: block;
+  float: left;
+  width: 15em;
+  margin-right: 5em;
+}
+main #menu .flex .filtro ul {
+  padding-bottom: 4em;
+}
+main #menu .flex .filtro ul li{
+  display: block;
+  padding: 1.25em;
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}  
+main #menu .flex .filtro ul li.activo {
+  background-color: var(--colorprincipal);
+}
+.today-offers {
+  color: white;
+}
+#menu .container {
+  height: 100%;
+}
+#menu .container .flex .today-offers p {
+  width: 15em;
+}
+#menu .container .flex p {
+  color: #aaa;
+  width: 28em;
+}
+#menu .container .flex h3 {
+  color: white;
+}
+#menu .container .flex {
+  width: 45em;
+}
+#menu .container .flex img {
+  margin-right: 15px;
+}
+#menu .container .flex div {
+  width: 100%;
+}
+#menu .precio{
+  color: var(--colorprincipal);
+  position: relative;
+}
+/* Final Menu*/
+/* Inicio Blog*/
+/* Final Blog*/
 /* media queries */
 
 @media (min-width: 37.5em) {
